@@ -3,4 +3,3 @@
   - The idea is to use an interface to provide a common behavior that can be used by several classes by having them all implement the same interface. It's a way to standardize the way of a particular set of classes is used.
 
 
-- 
