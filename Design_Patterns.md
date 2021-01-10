@@ -1,6 +1,6 @@
-- ## Creational Patterns
+## Creational Patterns
 
-- **Singleton**
+#### Singleton
 - Singleton is a creational pattern which describes a way to create an object.
 - The Singleton pattern refers to having only one object of a class.
 - **Goals of Singleton pattern:**
