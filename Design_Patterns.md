@@ -1,4 +1,4 @@
-- **Creational Patterns**
+- ## Creational Patterns
 
 - **Singleton**
 - Singleton is a creational pattern which describes a way to create an object.
