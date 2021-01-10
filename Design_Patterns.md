@@ -42,4 +42,32 @@
   * Indirectly translate the client's request into one the adaptee is expecting.
   * Reuse an existing adaptee with an incompatible interface.
 
+###  Composite Pattern
+- **Composite Design Pattern achieves two goals:**
+  * To compose nested structures of objects.
+  * To deal with the classes for these objects uniformly. 
+- **The composite design pattern is used to solve the issues of:**
+  * How to build a tree-like structure of objects.
+  * How to treat the individual types of those objects uniformly. 
+- **This is achieved by:**
+  * Enforcing polymorphism across each class through implementing an interface or inheriting from a superclass.
+  * Using a technique called recursive composition, which allows objects to be composed of other objects that are of a common type. 
+
+### Proxy Pattern
+- The proxy acts as a simplified or lightweight version of the original object. 
+- A proxy object is still able to accomplish the same tasks, but may delegate requests to the original object to achieve them.
+- **Why do we want to use a proxy class? The three most common scenarios for them are:** 
+  1. To act as a virtual proxy where the proxy class is used in place of a real subject class, that is resource intensive to instantiate. This is commonly used on images, and web pages, or graphics editors, because a single high definition image can be extremely large. If you were to load all of these images at once, it could put a strain on your system's resources. 
+  2. To act as a protection proxy in order to control access to the real subject class. A protection proxy can be used in a learning management system that checks the credentials of a user. So the different users, like students and instructors, can only access the appropriate functions permitted by their role. And three, 
+  3. To act as a remote proxy, where the proxy class is local and the real subject class exists remotely. 
+- **To summarize, the main features of the proxy design pattern are:**
+  * To use the proxy class to wrap the real subject class.
+  * To have a polymorphic design so that the client class can expect the same interface for the proxy and real subject classes.
+  * To use a lightweight proxy in place of a resource intensive object until it is actually needed.
+  * To implement some form of intelligent verification of requests from client code in order to determine if, how, and to whom the requests should be forwarded to.
+  * To present a local representation of a system that is not in the same physical or virtual space. 
+
+### Decorator Pattern
+
+
 
