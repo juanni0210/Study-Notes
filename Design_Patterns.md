@@ -1,20 +1,20 @@
-## Creational Patterns
+## 1. Creational Patterns
 
-### Singleton
+### 1.1 Singleton
 - Singleton is a creational pattern which describes a way to create an object.
 - The Singleton pattern refers to having only one object of a class.
 - **Goals of Singleton pattern:**
 - Enforces one and only one object of a Singleton class
 - Has the Singleton object globally accessible
   
-### Factory Method Pattern
+### 1.2 Factory Method Pattern
 - **Benefits of Factory Object:** If there are multiple clients that want to instantiate the same set of classes, then by using a Factory object, you have cut out redundant code and made the software easier to modify.
 - The act of object creation, usually with the new keyword in Java is called **concrete instantiation**.
 - "This allows the developer to make changes to the concrete instantiation without touching the client method. The client method does not need to name a concrete knife classes and now deals with a knife generalization. This is called coding to an interface, not an implementation."
 - Factories allow client code to operate on generalizations. This is called **coding to an interface, not an implementation**. 
 - The factory method design intent is to define an interface for creating objects, but let the sub-classes decide which class to instantiate.
   
-### Facade Pattern
+### 1.3 Facade Pattern
 - The facade design pattern provides a single simplified interface for client classes to interact with the subsystem.
 - A facade does not actually add more functionality, a facade simply acts as a point of entry into your subsystem. 
 - In software, the facade design pattern does exactly what a waiter or salesperson would do in real life. A facade is a wrapper class that encapsulate the subsystem in order to hide the subsystem's complexity. This wrapper class will allow a client class to interact with the subsystem through a facade. 
@@ -33,7 +33,7 @@
   * Provides client classes with a simplified interface for the subsystem.
   * Acts simply as a point of entry to a subsystem and does not add more functionality to the subsystem.
 
-### Adapter Pattern
+### 1.4 Adapter Pattern
 - The adapter design pattern will help facilitate communication between two existing systems by providing a compatible interface.
 - The adaptee is hidden from the client by the wrapping adapter class.
 - **Remember that an adapter is meant to:**
@@ -42,7 +42,7 @@
   * Indirectly translate the client's request into one the adaptee is expecting.
   * Reuse an existing adaptee with an incompatible interface.
 
-###  Composite Pattern
+###  1.5 Composite Pattern
 - **Composite Design Pattern achieves two goals:**
   * To compose nested structures of objects.
   * To deal with the classes for these objects uniformly. 
@@ -53,7 +53,7 @@
   * Enforcing polymorphism across each class through implementing an interface or inheriting from a superclass.
   * Using a technique called recursive composition, which allows objects to be composed of other objects that are of a common type. 
 
-### Proxy Pattern
+### 1.6 Proxy Pattern
 - The proxy acts as a simplified or lightweight version of the original object. 
 - A proxy object is still able to accomplish the same tasks, but may delegate requests to the original object to achieve them.
 - **Why do we want to use a proxy class? The three most common scenarios for them are:** 
@@ -67,7 +67,32 @@
   * To implement some form of intelligent verification of requests from client code in order to determine if, how, and to whom the requests should be forwarded to.
   * To present a local representation of a system that is not in the same physical or virtual space. 
 
-### Decorator Pattern
+### 1.7 Decorator Pattern
 
+## 2. Behavioural Patterns
 
+### 2.1 Template Method Pattern
+- The template method defines an algorithm's steps generally, deferring the implementation of some steps to subclasses. It is a behavioral design pattern and is concerned with the assignment of responsibilities.
+- The template method can be helpful if you have two classes with similar functionality. When you notice two classes with a very similar order of operations, you can choose to use a template method. The template method pattern is a practical application of generalization and inheritance.
+
+### 2.2 Chain of Responsibility Pattern
+- A chain of objects that are responsible for handling requests.
+- In software design, the Chain of Responsibility is a series of handler objects that are linked together.
+- You can also think of this pattern as similar to Exception handling in Java. 
+
+### 2.3 State Pattern
+- **When should you use the state pattern?** 
+  * The state pattern is primarily used when you need to change the behavior of an object based upon the state that it's in at run-time.
+
+### 2.4 Command Pattern
+- Instead of having these objects directly communicating with each other, the command pattern creates a command object in between the sender and receiver. 
+- The command pattern has another object that invokes the command objects to complete whatever task it is supposed to do, called the invoker.
+- A command manager can also be used which basically keeps track of the commands, manipulates them and invokes them. 
+- **Where can you implement the command pattern in your software?**
+  1. One purpose of using the command pattern is to store and schedule different requests. You can store these command objects into lists, you can manipulate them before they are completed, or you can put them onto a queue so that you can schedule different commands to be completed at different times. 
+  2. Another important purpose of the command pattern is allowing commands to be undone or redone.
+- **There are many benefits that come from using the command pattern.**
+  * It allows you to manipulate the commands as objects the way you could not do with method calls. 
+  * Working with command objects allows you to add the functionalities I mentioned earlier, like putting commands into queues and adding an undo/redo function. 
+  * Another main benefit of the command pattern is that it decouples the objects of your software program. 
 
