@@ -95,4 +95,3 @@
   * It allows you to manipulate the commands as objects the way you could not do with method calls. 
   * Working with command objects allows you to add the functionalities I mentioned earlier, like putting commands into queues and adding an undo/redo function. 
   * Another main benefit of the command pattern is that it decouples the objects of your software program. 
-
